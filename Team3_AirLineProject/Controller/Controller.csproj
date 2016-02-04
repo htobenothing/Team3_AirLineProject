@@ -66,8 +66,7 @@
     <Compile Include="Booking.cs">
       <DependentUpon>AirLine.tt</DependentUpon>
     </Compile>
-    <Compile Include="CheckLogin.cs" />
-    <Compile Include="Class1.cs" />
+    <Compile Include="LoginRegister.cs" />
     <Compile Include="Departure.cs">
       <DependentUpon>AirLine.tt</DependentUpon>
     </Compile>

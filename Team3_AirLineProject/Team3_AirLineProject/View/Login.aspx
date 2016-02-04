@@ -10,7 +10,7 @@
             <asp:Button runat="server" ID="btnlogin" text="login" OnClick="btnlogin_Click" />
         
         <div class="login-help">
-            <a href="#">Register</a> • <a href="#">Forgot Password</a>
+            <a href="Register.aspx">Register</a> • <a href="#">Forgot Password</a>
         </div>
     </div>
 </asp:Content>
