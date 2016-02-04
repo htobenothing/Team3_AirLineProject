@@ -160,6 +160,55 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="css\layout.css" />
+    <Content Include="css\reset.css" />
+    <Content Include="css\style.css" />
+    <Content Include="images\banner1.jpg" />
+    <Content Include="images\banner2.jpg" />
+    <Content Include="images\banner3.jpg" />
+    <Content Include="images\bg_footer.gif" />
+    <Content Include="images\bg_img.jpg" />
+    <Content Include="images\bg_top.jpg" />
+    <Content Include="images\bg_top2.jpg" />
+    <Content Include="images\bg_top_img.jpg" />
+    <Content Include="images\button_1.gif" />
+    <Content Include="images\button_active.gif" />
+    <Content Include="images\check.gif" />
+    <Content Include="images\help.gif" />
+    <Content Include="images\icon1.jpg" />
+    <Content Include="images\icon2.jpg" />
+    <Content Include="images\icon3.jpg" />
+    <Content Include="images\icon4.jpg" />
+    <Content Include="images\icon5.jpg" />
+    <Content Include="images\icon6.jpg" />
+    <Content Include="images\img_top1.gif" />
+    <Content Include="images\img_top2.gif" />
+    <Content Include="images\img_top3.gif" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\marker_1.gif" />
+    <Content Include="images\marker_2.gif" />
+    <Content Include="images\marker_3.gif" />
+    <Content Include="images\marker_4.gif" />
+    <Content Include="images\marker_left.gif" />
+    <Content Include="images\marker_right.gif" />
+    <Content Include="images\menu_bg.gif" />
+    <Content Include="images\menu_left.gif" />
+    <Content Include="images\menu_left.png" />
+    <Content Include="images\menu_line.gif" />
+    <Content Include="images\menu_right.gif" />
+    <Content Include="images\menu_right.png" />
+    <Content Include="images\opacity_50_black.png" />
+    <Content Include="images\page1_img1.jpg" />
+    <Content Include="images\page1_img2.jpg" />
+    <Content Include="images\page2_img1.jpg" />
+    <Content Include="images\page2_img2.jpg" />
+    <Content Include="images\page2_img3.jpg" />
+    <Content Include="images\page5_img1.jpg" />
+    <Content Include="images\page5_img2.jpg" />
+    <Content Include="images\radio.png" />
+    <Content Include="images\select.gif" />
+    <Content Include="images\tabs.gif" />
+    <Content Include="images\tabs_active.gif" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -205,7 +254,7 @@
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Site.Mobile.Master" />
-    <Content Include="View\Welcome.Master" />
+    <Content Include="View\Main.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -329,17 +378,16 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
-    <Compile Include="View\Welcome.Master.cs">
-      <DependentUpon>Welcome.Master</DependentUpon>
+    <Compile Include="View\Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\Welcome.Master.designer.cs">
-      <DependentUpon>Welcome.Master</DependentUpon>
+    <Compile Include="View\Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="image\" />
-    <Folder Include="js_css\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
