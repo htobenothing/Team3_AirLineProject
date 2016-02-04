@@ -6,22 +6,26 @@ using System.Threading.Tasks;
 
 namespace Controller
 {
-    class LoginRegister
+    public class LoginRegister
     {
-        public bool CheckLoginUser(string name, string password)
+        public static bool CheckLoginUser(string name, string password)
         {
             bool isUserCorrect = false;
             AirlineEntities airlineEf = new AirlineEntities();
             User loginUser = airlineEf.Users.Find(name);
+            
             if (null != loginUser)
             {
-                if (loginUser.idUser == password)
+                if (loginUser.password.Equals(password))
                 {
+                    
                     isUserCorrect = true;
                     return isUserCorrect;
                 }
             }
             return isUserCorrect;
         }
+        
     }
+    
 }

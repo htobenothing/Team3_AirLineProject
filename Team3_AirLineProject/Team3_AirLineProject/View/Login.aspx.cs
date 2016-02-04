@@ -4,8 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Controller;
 using System.Web.Security;
+using Controller;
 namespace Team3_AirLineProject.View
 {
     public partial class Login : System.Web.UI.Page
@@ -21,15 +21,14 @@ namespace Team3_AirLineProject.View
             string name = txtUser.Text;
             string password = txtPassword.Text;
 
-            
-
-            if(Membership.ValidateUser(name,password)){
-
+            if (LoginRegister.CheckLoginUser(name, password))
+            {
+                txtMessage.Text = "User Correct";
                 FormsAuthentication.RedirectFromLoginPage(name, false);
             }
             else
             {
-
+                txtMessage.Text = "User inCorrect";
             }
             
         }
