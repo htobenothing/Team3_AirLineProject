@@ -11,9 +11,8 @@ namespace Controller
         public static bool CheckLoginUser(string name, string password)
         {
             bool isUserCorrect = false;
-            AirlineEntities airlineEf = new AirlineEntities();
-            User loginUser = airlineEf.Users.Find(name);
             
+            User loginUser = UserManager.getUser(name);
             if (null != loginUser)
             {
                 if (loginUser.password.Equals(password))
@@ -25,7 +24,31 @@ namespace Controller
             }
             return isUserCorrect;
         }
-        
+
+        public static bool Register(string name, string password, string phoneNo)
+        {
+            if (UserManager.getUser(name) == null)
+            {
+                User newUser = new User();
+                newUser.idUser = name;
+                newUser.password = password;
+                newUser.phoneNo = phoneNo;
+                newUser.status = "active";
+                newUser.idRole = "User";
+
+                UserManager.createUser(newUser);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+           
+
+
+        }
+
     }
+    
     
 }

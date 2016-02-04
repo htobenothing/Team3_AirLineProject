@@ -23,12 +23,11 @@ namespace Team3_AirLineProject.View
 
             if (LoginRegister.CheckLoginUser(name, password))
             {
-                txtMessage.Text = "User Correct";
                 FormsAuthentication.RedirectFromLoginPage(name, false);
             }
             else
             {
-                txtMessage.Text = "User inCorrect";
+                txtMessage.Text = "UserId or password not correct"
             }
             
         }

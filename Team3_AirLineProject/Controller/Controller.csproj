@@ -90,6 +90,7 @@
     <Compile Include="User.cs">
       <DependentUpon>AirLine.tt</DependentUpon>
     </Compile>
+    <Compile Include="UserManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <EntityDeploy Include="AirLine.edmx">
