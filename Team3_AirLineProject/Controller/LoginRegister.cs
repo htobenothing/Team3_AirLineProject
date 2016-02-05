@@ -34,7 +34,7 @@ namespace Controller
                 newUser.password = password;
                 newUser.phoneNo = phoneNo;
                 newUser.status = "active";
-                newUser.idRole = "User";
+                newUser.idRole = "user";
 
                 UserManager.createUser(newUser);
                 return true;

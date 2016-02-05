@@ -8,17 +8,24 @@ namespace Controller
 {
     class UserManager
     {
-        static AirlineEntities airlineEf = new AirlineEntities();
+        
         public static User getUser(string name)
         {
+            using (AirlionEntities airlineEf = new AirlionEntities())
+            {
+                return airlineEf.Users.Find(name);
+            }
             
-            return airlineEf.Users.Find(name);
         }
 
         public static void createUser(User newuser)
         {
-            airlineEf.Users.Add(newuser);
-
+            using (AirlionEntities airlineEf = new AirlionEntities())
+            {
+                airlineEf.Users.Add(newuser);
+                airlineEf.SaveChanges();
+            }
+           
         }
     }
 }

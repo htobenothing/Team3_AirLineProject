@@ -19,7 +19,7 @@ namespace Controller
             this.Bookings = new HashSet<Booking>();
         }
     
-        public string idDeparture { get; set; }
+        public int idDeparture { get; set; }
         public string idFlight { get; set; }
         public System.DateTime startDate { get; set; }
         public System.DateTime endDate { get; set; }

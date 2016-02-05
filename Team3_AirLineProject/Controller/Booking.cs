@@ -15,12 +15,13 @@ namespace Controller
     public partial class Booking
     {
         public int idBooking { get; set; }
-        public string idDeparture { get; set; }
+        public int idDeparture { get; set; }
         public string idUser { get; set; }
         public string passportNo { get; set; }
         public string bookingStatus { get; set; }
         public System.DateTime bookingDate { get; set; }
         public System.DateTime departureDate { get; set; }
+        public decimal bookPrice { get; set; }
     
         public virtual Departure Departure { get; set; }
         public virtual Passenger Passenger { get; set; }

@@ -24,7 +24,7 @@ namespace Controller
         public string endCity { get; set; }
         public System.TimeSpan StartTime { get; set; }
         public System.TimeSpan endTime { get; set; }
-        public double price { get; set; }
+        public decimal price { get; set; }
         public int totalSeatNo { get; set; }
         public string status { get; set; }
     
