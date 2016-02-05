@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.Master.cs" Inherits="Team3_AirLineProject.View.Welcome" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="../css/reset.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="../css/layout.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
+    <link href="../css/login.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body id="page1">
+    <div class="main" >
+        <header>
+            <div class="wrapper">
+                <h1><a href="index.html" id="logo">AirLines</a></h1>
+
+                <span id="slogan">Fast, Frequent &amp; Safe Flights</span>
+            </div>
+            <nav>
+                <ul id="menu">
+                    <li id="menu_active"><a href="index.html"><span><span>Home</span></span></a></li>
+                    <li><a href="offers.html"><span><span>Booking</span></span></a></li>
+                    <li><a href="book.html"><span><span>Contact</span></span></a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="content">
+            <form id="form1" runat="server">
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </form>
+
+            <footer>
+                <div class="wrapper">
+                    <h1>Welcome to FunFly AirLine Company</h1>
+                </div>
+            </footer>
+        </section>
+    </div>
+</body>
+</html>

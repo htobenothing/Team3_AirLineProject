@@ -27,7 +27,7 @@ namespace Team3_AirLineProject.View
             }
             else
             {
-                txtMessage.Text = "UserId or password not correct"
+                txtMessage.Text = "UserId or password not correct";
             }
             
         }
