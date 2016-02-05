@@ -25,6 +25,17 @@ namespace Controller
             return isUserCorrect;
         }
 
+        public static bool CheckUserid(string name)
+        {
+            bool isUserExit = false;
+            if (UserManager.getUser(name) == null)
+            {
+                isUserExit = true;
+                return isUserExit;
+            }
+
+            return isUserExit;
+        }
         public static bool RegisterUser(string name, string password, string phoneNo)
         {
             if (UserManager.getUser(name) == null)

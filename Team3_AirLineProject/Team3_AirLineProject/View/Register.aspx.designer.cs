@@ -22,6 +22,33 @@ namespace Team3_AirLineProject.View {
         protected global::System.Web.UI.WebControls.TextBox txtUser;
         
         /// <summary>
+        /// valEmail1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator valEmail1;
+        
+        /// <summary>
+        /// valEmail2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator valEmail2;
+        
+        /// <summary>
+        /// labmessage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label labmessage;
+        
+        /// <summary>
         /// txtPassword control.
         /// </summary>
         /// <remarks>
@@ -29,6 +56,15 @@ namespace Team3_AirLineProject.View {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPassword;
+        
+        /// <summary>
+        /// valPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator valPassword;
         
         /// <summary>
         /// txtConfirmPassword control.
@@ -40,6 +76,15 @@ namespace Team3_AirLineProject.View {
         protected global::System.Web.UI.WebControls.TextBox txtConfirmPassword;
         
         /// <summary>
+        /// valConfirmPwd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator valConfirmPwd;
+        
+        /// <summary>
         /// txtPhoneNumber control.
         /// </summary>
         /// <remarks>
@@ -47,6 +92,15 @@ namespace Team3_AirLineProject.View {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPhoneNumber;
+        
+        /// <summary>
+        /// valPhone control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator valPhone;
         
         /// <summary>
         /// btnConfirm control.

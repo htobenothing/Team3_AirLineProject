@@ -12,7 +12,7 @@ namespace Team3_AirLineProject.userPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            labMessage.Text = Roles.GetUsersInRole();
+            
         }
     }
 }
