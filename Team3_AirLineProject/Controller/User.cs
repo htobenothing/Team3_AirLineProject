@@ -16,6 +16,7 @@ namespace Controller
     {
         public User()
         {
+            this.Bookings = new HashSet<Booking>();
             this.Passengers = new HashSet<Passenger>();
         }
     
@@ -25,6 +26,7 @@ namespace Controller
         public string status { get; set; }
         public string idRole { get; set; }
     
+        public virtual ICollection<Booking> Bookings { get; set; }
         public virtual ICollection<Passenger> Passengers { get; set; }
         public virtual Role Role { get; set; }
     }

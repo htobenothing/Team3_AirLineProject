@@ -20,10 +20,15 @@ namespace Team3_AirLineProject.View
         {
             string name = txtUser.Text;
             string password = txtPassword.Text;
+            
 
             if (LoginRegister.CheckLoginUser(name, password))
             {
-                FormsAuthentication.RedirectFromLoginPage(name, false);
+                
+                
+                FormsAuthentication.RedirectFromLoginPage(name, true);
+               
+                
             }
             else
             {

@@ -3,5 +3,5 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     Hello, Nice to meet you
-
+    <asp:Label runat="server" ID="labMessage"></asp:Label>
 </asp:Content>

@@ -14,16 +14,20 @@ namespace Controller
     
     public partial class Booking
     {
+        public Booking()
+        {
+            this.Ticktes = new HashSet<Tickte>();
+        }
+    
         public int idBooking { get; set; }
         public int idDeparture { get; set; }
         public string idUser { get; set; }
-        public string passportNo { get; set; }
-        public string bookingStatus { get; set; }
         public System.DateTime bookingDate { get; set; }
-        public System.DateTime departureDate { get; set; }
-        public decimal bookPrice { get; set; }
+        public string bookingStatus { get; set; }
+        public decimal totalPrice { get; set; }
     
         public virtual Departure Departure { get; set; }
-        public virtual Passenger Passenger { get; set; }
+        public virtual User User { get; set; }
+        public virtual ICollection<Tickte> Ticktes { get; set; }
     }
 }

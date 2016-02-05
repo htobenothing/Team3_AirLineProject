@@ -13,9 +13,10 @@ namespace Controller
             LoginRegister lg = new LoginRegister();
 
             Console.WriteLine(LoginRegister.CheckLoginUser("jame1@gmail.com", "123456"));
-
-
-            Console.WriteLine(LoginRegister.Register("james@gmail.com", "good", "99887766"));
+            
+            
+            
+            Console.WriteLine(LoginRegister.RegisterUser("james@gmail.com", "good", "99887766"));
         }
     }
 }

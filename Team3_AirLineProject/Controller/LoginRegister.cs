@@ -25,7 +25,7 @@ namespace Controller
             return isUserCorrect;
         }
 
-        public static bool Register(string name, string password, string phoneNo)
+        public static bool RegisterUser(string name, string password, string phoneNo)
         {
             if (UserManager.getUser(name) == null)
             {
@@ -35,7 +35,7 @@ namespace Controller
                 newUser.phoneNo = phoneNo;
                 newUser.status = "active";
                 newUser.idRole = "user";
-
+                
                 UserManager.createUser(newUser);
                 return true;
             }

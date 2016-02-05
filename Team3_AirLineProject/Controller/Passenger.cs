@@ -14,11 +14,6 @@ namespace Controller
     
     public partial class Passenger
     {
-        public Passenger()
-        {
-            this.Bookings = new HashSet<Booking>();
-        }
-    
         public string idUser { get; set; }
         public string passportNo { get; set; }
         public string pasName { get; set; }
@@ -26,7 +21,6 @@ namespace Controller
         public string gender { get; set; }
         public System.DateTime createDate { get; set; }
     
-        public virtual ICollection<Booking> Bookings { get; set; }
         public virtual User User { get; set; }
     }
 }
