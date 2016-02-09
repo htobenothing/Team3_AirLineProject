@@ -249,6 +249,12 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
+    <Content Include="staff\ListOfFlights.aspx" />
+    <Content Include="staff\SearchbyDate.aspx" />
+    <Content Include="staff\SearchbyUserid.aspx" />
+    <Content Include="staff\StaffSearchbyFlightID.aspx" />
+    <Content Include="staff\test.aspx" />
+    <Content Include="user\UserSearch.aspx" />
     <Content Include="user\welcome.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="view\Login.aspx" />
@@ -379,7 +385,49 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="staff\ListOfFlights.aspx.cs">
+      <DependentUpon>ListOfFlights.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="staff\ListOfFlights.aspx.designer.cs">
+      <DependentUpon>ListOfFlights.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="staff\SearchbyDate.aspx.cs">
+      <DependentUpon>SearchbyDate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="staff\SearchbyDate.aspx.designer.cs">
+      <DependentUpon>SearchbyDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="staff\SearchbyUserid.aspx.cs">
+      <DependentUpon>SearchbyUserid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="staff\SearchbyUserid.aspx.designer.cs">
+      <DependentUpon>SearchbyUserid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="staff\StaffSearchbyFlightID.aspx.cs">
+      <DependentUpon>StaffSearchbyFlightID.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="staff\StaffSearchbyFlightID.aspx.designer.cs">
+      <DependentUpon>StaffSearchbyFlightID.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="staff\test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="staff\test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="user\UserSearch.aspx.cs">
+      <DependentUpon>UserSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\UserSearch.aspx.designer.cs">
+      <DependentUpon>UserSearch.aspx</DependentUpon>
+    </Compile>
     <Compile Include="user\welcome.aspx.cs">
       <DependentUpon>welcome.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -418,7 +466,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="staff\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Controller\Controller.csproj">
