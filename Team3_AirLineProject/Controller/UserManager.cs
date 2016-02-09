@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Controller
 {
-    class UserManager
+    public class UserManager
     {
         
         public static User getUser(string name)

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Controller;
 
 namespace Team3_AirLineProject.View
 {
@@ -11,7 +12,38 @@ namespace Team3_AirLineProject.View
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            btnLogout.Visible = false;
+            if (!IsPostBack)
+            {
+                if (Session != null)
+                {
+                    if (Session["LoginUser"] != null)
+                    {
+                        btnLogin.Visible = false;
+                        btnLRegister.Visible = false;
+                        btnLogout.Visible = true;
+                        User u = (User)Session["LoginUser"];
+                        btnLogout.Text = u.idUser;
+                    }
+                }
+            }
+           
+        }
 
+        protected void btnLRegister_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/view/Register.aspx");
+        }
+
+        protected void btnLogin_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/view/Login.aspx");
+        }
+
+        protected void btnLogout_Click(object sender, EventArgs e)
+        {
+            Session.Clear();
+            Response.Redirect("~/view/Login.aspx");
         }
     }
 }

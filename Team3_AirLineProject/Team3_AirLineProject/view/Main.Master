@@ -13,13 +13,14 @@
     </asp:ContentPlaceHolder>
 </head>
 <body id="page1">
-    <div class="main" >
+    <div class="main">
         <header>
             <div class="wrapper">
                 <h1><a href="index.html" id="logo">AirLines</a></h1>
 
                 <span id="slogan">Fast, Frequent &amp; Safe Flights</span>
             </div>
+
             <nav>
                 <ul id="menu">
                     <li id="menu_active"><a href="index.html"><span><span>Home</span></span></a></li>
@@ -29,7 +30,14 @@
             </nav>
         </header>
         <section id="content">
+
             <form id="form1" runat="server">
+                <div align="right">
+                    
+                    <asp:Button runat="server" ID="btnLRegister" Text="Register" CssClass="button1" OnClick="btnLRegister_Click" />
+                    <asp:Button runat="server" ID="btnLogin" Text="Login" CssClass="button1" OnClick="btnLogin_Click" />
+                    <asp:Button runat="server" ID="btnLogout" CssClass="button1" OnClick="btnLogout_Click" />
+                </div>
                 <div>
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                     </asp:ContentPlaceHolder>

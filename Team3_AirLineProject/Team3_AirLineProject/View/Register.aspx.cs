@@ -30,10 +30,12 @@ namespace Team3_AirLineProject.View
         {
             if (valEmail1.IsValid && valEmail2.IsValid && valPassword.IsValid && valConfirmPwd.IsValid && valPhone.IsValid)
             {
+
                 if (LoginRegister.RegisterUser(txtUser.Text, txtPassword.Text, txtPhoneNumber.Text))
-                {
+                {   
                     ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Register Successful')", true);
-                    Response.Redirect("~/user/welcome.apsx");
+                    
+                    Response.Redirect("~/view/Login.aspx");
                 }
                 else
                 {

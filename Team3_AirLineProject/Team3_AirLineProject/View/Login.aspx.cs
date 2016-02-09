@@ -24,10 +24,25 @@ namespace Team3_AirLineProject.View
 
             if (LoginRegister.CheckLoginUser(name, password))
             {
+
+                User LoginUser = UserManager.getUser(name);
+                Session["LoginUser"] = LoginUser;
                 
+                // redirect base on 
+                switch (LoginUser.idRole)
+                {
+                    case "user":
+                        Response.Redirect("~/user/welcome.aspx");
+                        break;
+
+                    case "staff":
+                        Response.Redirect("~/staff/welcome.aspx");
+                        break;
+                    case "admin":
+                        Response.Redirect("~/admin/welcome.aspx");
+                        break;
+                }
                 
-                FormsAuthentication.RedirectFromLoginPage(name, true);
-               
                 
             }
             else
