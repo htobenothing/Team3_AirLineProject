@@ -19,11 +19,10 @@ namespace Team3_AirLineProject.View
                 {
                     if (Session["LoginUser"] != null)
                     {
+                        btnLogout.Visible = true;
                         btnLogin.Visible = false;
                         btnLRegister.Visible = false;
-                        btnLogout.Visible = true;
                         User u = (User)Session["LoginUser"];
-                        btnLogout.Text = u.idUser;
                     }
                 }
             }
@@ -45,5 +44,7 @@ namespace Team3_AirLineProject.View
             Session.Clear();
             Response.Redirect("~/view/Login.aspx");
         }
+
+        
     }
 }

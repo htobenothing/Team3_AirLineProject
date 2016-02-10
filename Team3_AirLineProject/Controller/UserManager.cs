@@ -14,6 +14,7 @@ namespace Controller
             using (AirlionEntities airlineEf = new AirlionEntities())
             {
                 return airlineEf.Users.Find(name);
+                
             }
             
         }

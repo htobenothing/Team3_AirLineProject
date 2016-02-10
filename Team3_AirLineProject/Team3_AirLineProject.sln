@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Team3_AirLineProject", "Tea
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controller", "Controller\Controller.csproj", "{F9AD4044-A0C9-4186-A397-8412B42CE850}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirlineManagement", "..\..\AirlineManagement\AirlineManagement\AirlineManagement.csproj", "{3CFA4CB6-6D8F-488B-87F9-6514A0CB94A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F9AD4044-A0C9-4186-A397-8412B42CE850}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9AD4044-A0C9-4186-A397-8412B42CE850}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9AD4044-A0C9-4186-A397-8412B42CE850}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CFA4CB6-6D8F-488B-87F9-6514A0CB94A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CFA4CB6-6D8F-488B-87F9-6514A0CB94A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CFA4CB6-6D8F-488B-87F9-6514A0CB94A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CFA4CB6-6D8F-488B-87F9-6514A0CB94A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

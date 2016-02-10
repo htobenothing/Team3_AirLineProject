@@ -15,12 +15,16 @@ namespace Controller
             User loginUser = UserManager.getUser(name);
             if (null != loginUser)
             {
-                if (loginUser.password.Equals(password))
+                if(loginUser.status == "active")
                 {
-                    
-                    isUserCorrect = true;
-                    return isUserCorrect;
+                    if (loginUser.password.Equals(password))
+                    {
+
+                        isUserCorrect = true;
+                        return isUserCorrect;
+                    }
                 }
+                
             }
             return isUserCorrect;
         }

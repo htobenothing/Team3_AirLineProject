@@ -174,6 +174,7 @@
     <Content Include="images\bg_top_img.jpg" />
     <Content Include="images\button_1.gif" />
     <Content Include="images\button_active.gif" />
+    <Content Include="images\calendar.png" />
     <Content Include="images\check.gif" />
     <Content Include="images\help.gif" />
     <Content Include="images\icon1.jpg" />
@@ -215,6 +216,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
+    <Content Include="App_Themes\table\dataTable.skin" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -249,13 +251,12 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
-    <Content Include="staff\ListOfFlights.aspx" />
-    <Content Include="staff\SearchbyDate.aspx" />
-    <Content Include="staff\SearchbyUserid.aspx" />
-    <Content Include="staff\StaffSearchbyFlightID.aspx" />
-    <Content Include="staff\test.aspx" />
-    <Content Include="user\UserSearch.aspx" />
-    <Content Include="user\welcome.aspx" />
+    <Content Include="staff\nav.xml" />
+    <Content Include="staff\viewHistory.aspx" />
+    <Content Include="staff\welcome.aspx" />
+    <Content Include="userM\nav.xml" />
+    <Content Include="userM\viewHistory.aspx" />
+    <Content Include="userM\welcome.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="view\Login.aspx" />
     <Content Include="view\Register.aspx" />
@@ -268,7 +269,10 @@
     <Content Include="Site.Mobile.Master" />
     <Content Include="view\Main.Master" />
     <Content Include="view\Web.config" />
-    <Content Include="user\Web.config" />
+    <Content Include="userM\UserM.Master" />
+    <Content Include="staff\Staff.Master" />
+    <Content Include="userM\NestedMasterUser.master" />
+    <Content Include="staff\NestedMasterStaff.master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -385,54 +389,61 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
-    <Compile Include="staff\ListOfFlights.aspx.cs">
-      <DependentUpon>ListOfFlights.aspx</DependentUpon>
+    <Compile Include="staff\NestedMasterStaff.master.cs">
+      <DependentUpon>NestedMasterStaff.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="staff\ListOfFlights.aspx.designer.cs">
-      <DependentUpon>ListOfFlights.aspx</DependentUpon>
+    <Compile Include="staff\NestedMasterStaff.master.designer.cs">
+      <DependentUpon>NestedMasterStaff.master</DependentUpon>
     </Compile>
-    <Compile Include="staff\SearchbyDate.aspx.cs">
-      <DependentUpon>SearchbyDate.aspx</DependentUpon>
+    <Compile Include="staff\Staff.Master.cs">
+      <DependentUpon>Staff.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="staff\SearchbyDate.aspx.designer.cs">
-      <DependentUpon>SearchbyDate.aspx</DependentUpon>
+    <Compile Include="staff\Staff.Master.designer.cs">
+      <DependentUpon>Staff.Master</DependentUpon>
     </Compile>
-    <Compile Include="staff\SearchbyUserid.aspx.cs">
-      <DependentUpon>SearchbyUserid.aspx</DependentUpon>
+    <Compile Include="staff\viewHistory.aspx.cs">
+      <DependentUpon>viewHistory.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="staff\SearchbyUserid.aspx.designer.cs">
-      <DependentUpon>SearchbyUserid.aspx</DependentUpon>
+    <Compile Include="staff\viewHistory.aspx.designer.cs">
+      <DependentUpon>viewHistory.aspx</DependentUpon>
     </Compile>
-    <Compile Include="staff\StaffSearchbyFlightID.aspx.cs">
-      <DependentUpon>StaffSearchbyFlightID.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="staff\StaffSearchbyFlightID.aspx.designer.cs">
-      <DependentUpon>StaffSearchbyFlightID.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="staff\test.aspx.cs">
-      <DependentUpon>test.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="staff\test.aspx.designer.cs">
-      <DependentUpon>test.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Startup.cs" />
-    <Compile Include="user\UserSearch.aspx.cs">
-      <DependentUpon>UserSearch.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="user\UserSearch.aspx.designer.cs">
-      <DependentUpon>UserSearch.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="user\welcome.aspx.cs">
+    <Compile Include="staff\welcome.aspx.cs">
       <DependentUpon>welcome.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="user\welcome.aspx.designer.cs">
+    <Compile Include="staff\welcome.aspx.designer.cs">
+      <DependentUpon>welcome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Startup.cs" />
+    <Compile Include="userM\NestedMasterUser.master.cs">
+      <DependentUpon>NestedMasterUser.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userM\NestedMasterUser.master.designer.cs">
+      <DependentUpon>NestedMasterUser.master</DependentUpon>
+    </Compile>
+    <Compile Include="userM\UserM.Master.cs">
+      <DependentUpon>UserM.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userM\UserM.Master.designer.cs">
+      <DependentUpon>UserM.Master</DependentUpon>
+    </Compile>
+    <Compile Include="userM\viewHistory.aspx.cs">
+      <DependentUpon>viewHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userM\viewHistory.aspx.designer.cs">
+      <DependentUpon>viewHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userM\welcome.aspx.cs">
+      <DependentUpon>welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userM\welcome.aspx.designer.cs">
       <DependentUpon>welcome.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">

@@ -32,7 +32,7 @@ namespace Team3_AirLineProject.View
                 switch (LoginUser.idRole)
                 {
                     case "user":
-                        Response.Redirect("~/user/welcome.aspx");
+                        Response.Redirect("~/userM/welcome.aspx");
                         break;
 
                     case "staff":

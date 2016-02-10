@@ -25,15 +25,14 @@ mark, rp, rt, ruby, summary, time {
 /* Global properties */
 body {
 	background:url(../images/bg_img.jpg) top center no-repeat #000;
-	border:0;
-	font:13px Arial, Helvetica, sans-serif;
+	
 	color:#3a3a3a;
 	line-height:20px;
-	min-width:980px;
+	min-width:1366px;
 	padding:10px 0
 }
 .ic, .ic a {
-	border:0;
+	
 	float:right;
 	background:#fff;
 	color:#f00;
@@ -56,7 +55,7 @@ body {
 /* Global Structure */
 .main {
 	margin:0 auto;
-	width:960px;
+	width:1366px;
 	padding:10px;
 	background:#fff;
 	box-shadow:0 0 7px rgba(0, 0, 0, .2);
@@ -215,9 +214,7 @@ header {
 	padding:30px 0;
 	background:url(../images/bg_top2.jpg) 0 0 no-repeat
 }
-#page1 .pad1 {
-	background:none
-}
+
 .pad {
 	padding:0 27px 0 32px
 }
@@ -239,110 +236,7 @@ header {
 .marg_right1 {
 	margin-right:31px
 }
-/* tabs begin */
-.tabs {
-	position:relative
-}
-.tabs ul.nav {
-	position:absolute;
-	top:0
-}
-.tabs ul.nav li {
-	float:left;
-	padding-right:1px;
-	width:95px
-}
-.tabs ul.nav .end {
-	padding-right:0
-}
-.tabs ul.nav li a {
-	color:#fff;
-	text-align:center;
-	display:block;
-	background:url(../images/tabs.gif) 0 0 repeat-x #30c1fd;
-	line-height:42px;
-	text-decoration:none;
-	border-radius:6px 6px 0 0;
-	-moz-border-radius:6px 6px 0 0;
-	-webkit-border-radius:6px 6px 0 0;
-	box-shadow:0 0 3px #d0d0d0;
-	-moz-box-shadow:0 0 3px #d0d0d0;
-	-webkit-box-shadow:0 0 3px #d0d0d0;
-	position:relative;
-	overflow:hidden
-}
-.tabs ul.nav li a:hover, .tabs ul.nav .selected a {
-	color:#000;
-	background:url(../images/tabs_active.gif) top repeat-x #e7e6e6
-}
-.tabs .content {
-	background:#fff;
-	border-radius:0 0 6px 6px;
-	-moz-border-radius:0 0 6px 6px;
-	-webkit-border-radius:0 0 6px 6px;
-	box-shadow:0 0 3px #d0d0d0;
-	-moz-box-shadow:0 0 3px #d0d0d0;
-	-webkit-box-shadow:0 0 3px #d0d0d0;
-	position:relative;
-	padding:1px;
-	top:40px;
-	padding-bottom:20px
-}
-.tabs .tab-content {
-}
-/*  tabs end */
-/* tabs begin */
-.tabs2 {
-	position:relative
-}
-.tabs2 ul.nav {
-	position:absolute;
-	top:0
-}
-.tabs2 ul.nav li {
-	float:left;
-	padding-right:1px;
-	width:185px
-}
-.tabs2 ul.nav .end {
-	padding-right:0
-}
-.tabs2 ul.nav li a {
-	color:#fff;
-	text-align:center;
-	display:block;
-	background:url(../images/tabs.gif) 0 0 repeat-x #30c1fd;
-	line-height:42px;
-	text-decoration:none;
-	border-radius:6px 6px 0 0;
-	-moz-border-radius:6px 6px 0 0;
-	-webkit-border-radius:6px 6px 0 0;
-	box-shadow:0 0 3px #d0d0d0;
-	-moz-box-shadow:0 0 3px #d0d0d0;
-	-webkit-box-shadow:0 0 3px #d0d0d0;
-	position:relative;
-	overflow:hidden
-}
-.tabs2 ul.nav li a:hover, .tabs2 ul.nav .selected a {
-	color:#000;
-	background:url(../images/tabs_active.gif) top repeat-x #e7e6e6
-}
-.tabs2 .content {
-	background:#fff;
-	border-radius:0 0 6px 6px;
-	-moz-border-radius:0 0 6px 6px;
-	-webkit-border-radius:0 0 6px 6px;
-	box-shadow:0 0 3px #d0d0d0;
-	-moz-box-shadow:0 0 3px #d0d0d0;
-	-webkit-box-shadow:0 0 3px #d0d0d0;
-	position:relative;
-	padding:1px;
-	top:40px;
-	padding-bottom:20px
-}
-.tabs2 .tab-content {
-}
-/* tabs end */
+
 /* The Nivo Slider styles */
 #slider {
 	height:114px;
@@ -367,7 +261,7 @@ header {
 	left:0px;
 	width:100%;
 	height:100%;
-	border:0;
+	
 	padding:0;
 	margin:0;
 	z-index:60;
