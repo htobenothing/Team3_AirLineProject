@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/staff/NestedMasterStaff.master" AutoEventWireup="true" CodeBehind="viewHistory.aspx.cs" Inherits="Team3_AirLineProject.staff.viewHistory" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/staff/NestedMasterStaff.master" AutoEventWireup="true" CodeBehind="viewHistory.aspx.cs" Inherits="Team3_AirLineProject.staff.viewHistory" Theme="table"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Main" runat="server">
 
@@ -55,7 +55,7 @@
         <br />
 
 
-        <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None">
+        <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" SkinID="resultTable">
             <AlternatingRowStyle BackColor="White" />
             <EditRowStyle BackColor="#2461BF" />
             <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
