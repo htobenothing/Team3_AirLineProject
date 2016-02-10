@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/view/Main.Master" AutoEventWireup="true" CodeBehind="NestedMasterStaff.master.cs" Inherits="Team3_AirLineProject.staff.NestedMasterStaff" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+    <div>
+        <div style="float:left">
+            <asp:TreeView ID="TreeView1" runat="server" DataSourceID="StaffFunction" ImageSet="WindowsHelp">
+                <DataBindings>
+                    <asp:TreeNodeBinding DataMember="subfunction" NavigateUrlField="url" TextField="text" />
+                    <asp:TreeNodeBinding DataMember="funtion" NavigateUrlField="url" TextField="text" />
+                    <asp:TreeNodeBinding DataMember="function" NavigateUrlField="url" TextField="text" />
+                </DataBindings>
+                <HoverNodeStyle Font-Underline="True" ForeColor="#6666AA" />
+                <NodeStyle Font-Names="Tahoma" Font-Size="8pt" ForeColor="Black" HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="1px" />
+                <ParentNodeStyle Font-Bold="False" />
+                <SelectedNodeStyle BackColor="#B5B5B5" Font-Underline="False" HorizontalPadding="0px" VerticalPadding="0px" />
+            </asp:TreeView>
+            <asp:XmlDataSource ID="StaffFunction" runat="server" DataFile="~/staff/nav.xml"></asp:XmlDataSource>
+
+        </div>
+        <div style="float:left">
+            <asp:ContentPlaceHolder runat="server" ID="Main">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <div style="clear:both"></div>
+
+
+</asp:Content>
