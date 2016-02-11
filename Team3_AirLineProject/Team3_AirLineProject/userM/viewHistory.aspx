@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/userM/NestedMasterUser.master" AutoEventWireup="true" CodeBehind="viewHistory.aspx.cs" Inherits="Team3_AirLineProject.userM.viewHistory" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/userM/NestedMasterUser.master" AutoEventWireup="true" CodeBehind="ViewHistory.aspx.cs" Inherits="Team3_AirLineProject.userM.ViewHistory" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Main" runat="server">
     <div style="width:100%">

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/staff/NestedMasterStaff.master" AutoEventWireup="true" CodeBehind="viewHistory.aspx.cs" Inherits="Team3_AirLineProject.staff.viewHistory" Theme="table"%>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/staff/NestedMasterStaff.master" AutoEventWireup="true" CodeBehind="ViewHistory.aspx.cs" Inherits="Team3_AirLineProject.staff.ViewHistory" Theme="table"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Main" runat="server">
 

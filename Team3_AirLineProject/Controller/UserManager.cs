@@ -28,5 +28,15 @@ namespace Controller
             }
            
         }
+        public static void UpdateUser(User newusr)
+        {
+            using (AirlionEntities cntx = new AirlionEntities())
+            {
+               User updateUser= cntx.Users.Find(newusr.idUser);
+               updateUser.password = newusr.password;
+               updateUser.phoneNo = newusr.phoneNo;
+               cntx.SaveChanges();
+            }
+        }
     }
 }

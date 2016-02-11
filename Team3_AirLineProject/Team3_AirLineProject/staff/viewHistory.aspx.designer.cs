@@ -10,7 +10,7 @@
 namespace Team3_AirLineProject.staff {
     
     
-    public partial class viewHistory {
+    public partial class ViewHistory {
         
         /// <summary>
         /// Label1 control.

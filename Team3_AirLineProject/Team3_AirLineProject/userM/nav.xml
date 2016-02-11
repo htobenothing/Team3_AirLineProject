@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Home>
-  <funtion text="Welcome" url="~/userM/welcome.aspx"></funtion>
-  <funtion text="Profile" url="~/userM/profile.aspx"></funtion>
-  <funtion text="MainTain Passenger" url="~/userM/MainPassenger.aspx"></funtion>
-  <funtion text="View History" url="~/userM/viewHistory.aspx"></funtion>
+  <funtion text="Welcome" url="~/userM/Welcome.aspx"></funtion>
+  <funtion text="Profile" url="~/userM/Profile.aspx"></funtion>
+  <funtion text="MainTain Passenger" url="~/userM/MaintainPassenger.aspx"></funtion>
+  <funtion text="View History" url="~/userM/ViewHistory.aspx"></funtion>
 </Home>

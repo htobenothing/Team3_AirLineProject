@@ -45,6 +45,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -155,9 +156,13 @@
     <Content Include="Account\RegisterExternalLogin.aspx" />
     <Content Include="Account\ResetPassword.aspx" />
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
+    <Content Include="admin\AddUser.aspx" />
+    <Content Include="admin\MaintainUser.aspx" />
+    <Content Include="admin\UpdateUser.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\jquery-2.2.0.min.js" />
     <Content Include="Content\Site.css" />
     <Content Include="css\login.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -251,15 +256,38 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
+    <Content Include="staff\AddFlight.aspx" />
+    <Content Include="staff\AddPassenger.aspx" />
+    <Content Include="staff\BookingConfirmation.aspx" />
+    <Content Include="staff\CancelBooking.aspx" />
+    <Content Include="staff\CancelConfirm.aspx" />
+    <Content Include="staff\MaintainFlight.aspx" />
+    <Content Include="staff\MaintainPassenger.aspx" />
     <Content Include="staff\nav.xml" />
-    <Content Include="staff\viewHistory.aspx" />
-    <Content Include="staff\welcome.aspx" />
-    <Content Include="userM\nav.xml" />
-    <Content Include="userM\viewHistory.aspx" />
-    <Content Include="userM\welcome.aspx" />
+    <Content Include="staff\Profile.aspx" />
+    <Content Include="staff\SelectPassenger.aspx" />
+    <Content Include="staff\UpdateFlight.aspx" />
+    <Content Include="staff\UpdatePassenger.aspx" />
+    <Content Include="staff\ViewHistory.aspx" />
+    <Content Include="staff\Welcome.aspx" />
+    <Content Include="userM\AddPassenger.aspx" />
+    <Content Include="userM\BookingConfirmation.aspx" />
+    <Content Include="userM\CancelBooking.aspx" />
+    <Content Include="userM\MaintainPassenger.aspx" />
+    <Content Include="userM\nav.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="userM\Profile.aspx" />
+    <Content Include="userM\SelectPassenger.aspx" />
+    <Content Include="userM\UpdatePassenger.aspx" />
+    <Content Include="userM\ViewHistory.aspx" />
+    <Content Include="userM\Welcome.aspx" />
     <Content Include="ViewSwitcher.ascx" />
+    <Content Include="view\BookingFlightForm.aspx" />
+    <Content Include="view\FlightResult.aspx" />
     <Content Include="view\Login.aspx" />
     <Content Include="view\Register.aspx" />
+    <Content Include="view\SearchFlight.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -269,8 +297,6 @@
     <Content Include="Site.Mobile.Master" />
     <Content Include="view\Main.Master" />
     <Content Include="view\Web.config" />
-    <Content Include="userM\UserM.Master" />
-    <Content Include="staff\Staff.Master" />
     <Content Include="userM\NestedMasterUser.master" />
     <Content Include="staff\NestedMasterStaff.master" />
     <None Include="Web.Debug.config">
@@ -344,6 +370,27 @@
     <Compile Include="Account\ResetPasswordConfirmation.aspx.designer.cs">
       <DependentUpon>ResetPasswordConfirmation.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin\AddUser.aspx.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\AddUser.aspx.designer.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\MaintainUser.aspx.cs">
+      <DependentUpon>MaintainUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\MaintainUser.aspx.designer.cs">
+      <DependentUpon>MaintainUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\UpdateUser.aspx.cs">
+      <DependentUpon>UpdateUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\UpdateUser.aspx.designer.cs">
+      <DependentUpon>UpdateUser.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -388,6 +435,55 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="staff\AddFlight.aspx.cs">
+      <DependentUpon>AddFlight.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="staff\AddFlight.aspx.designer.cs">
+      <DependentUpon>AddFlight.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="staff\AddPassenger.aspx.cs">
+      <DependentUpon>AddPassenger.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="staff\AddPassenger.aspx.designer.cs">
+      <DependentUpon>AddPassenger.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="staff\BookingConfirmation.aspx.cs">
+      <DependentUpon>BookingConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="staff\BookingConfirmation.aspx.designer.cs">
+      <DependentUpon>BookingConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="staff\CancelBooking.aspx.cs">
+      <DependentUpon>CancelBooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="staff\CancelBooking.aspx.designer.cs">
+      <DependentUpon>CancelBooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="staff\CancelConfirm.aspx.cs">
+      <DependentUpon>CancelConfirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="staff\CancelConfirm.aspx.designer.cs">
+      <DependentUpon>CancelConfirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="staff\MaintainFlight.aspx.cs">
+      <DependentUpon>MaintainFlight.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="staff\MaintainFlight.aspx.designer.cs">
+      <DependentUpon>MaintainFlight.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="staff\MaintainPassenger.aspx.cs">
+      <DependentUpon>MaintainPassenger.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="staff\MaintainPassenger.aspx.designer.cs">
+      <DependentUpon>MaintainPassenger.aspx</DependentUpon>
+    </Compile>
     <Compile Include="staff\NestedMasterStaff.master.cs">
       <DependentUpon>NestedMasterStaff.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -395,28 +491,77 @@
     <Compile Include="staff\NestedMasterStaff.master.designer.cs">
       <DependentUpon>NestedMasterStaff.master</DependentUpon>
     </Compile>
-    <Compile Include="staff\Staff.Master.cs">
-      <DependentUpon>Staff.Master</DependentUpon>
+    <Compile Include="staff\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="staff\Staff.Master.designer.cs">
-      <DependentUpon>Staff.Master</DependentUpon>
+    <Compile Include="staff\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
     </Compile>
-    <Compile Include="staff\viewHistory.aspx.cs">
-      <DependentUpon>viewHistory.aspx</DependentUpon>
+    <Compile Include="staff\SelectPassenger.aspx.cs">
+      <DependentUpon>SelectPassenger.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="staff\viewHistory.aspx.designer.cs">
-      <DependentUpon>viewHistory.aspx</DependentUpon>
+    <Compile Include="staff\SelectPassenger.aspx.designer.cs">
+      <DependentUpon>SelectPassenger.aspx</DependentUpon>
     </Compile>
-    <Compile Include="staff\welcome.aspx.cs">
-      <DependentUpon>welcome.aspx</DependentUpon>
+    <Compile Include="staff\UpdateFlight.aspx.cs">
+      <DependentUpon>UpdateFlight.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="staff\welcome.aspx.designer.cs">
-      <DependentUpon>welcome.aspx</DependentUpon>
+    <Compile Include="staff\UpdateFlight.aspx.designer.cs">
+      <DependentUpon>UpdateFlight.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="staff\UpdatePassenger.aspx.cs">
+      <DependentUpon>UpdatePassenger.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="staff\UpdatePassenger.aspx.designer.cs">
+      <DependentUpon>UpdatePassenger.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="staff\ViewHistory.aspx.cs">
+      <DependentUpon>ViewHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="staff\ViewHistory.aspx.designer.cs">
+      <DependentUpon>ViewHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="staff\Welcome.aspx.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="staff\Welcome.aspx.designer.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="userM\AddPassenger.aspx.cs">
+      <DependentUpon>AddPassenger.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userM\AddPassenger.aspx.designer.cs">
+      <DependentUpon>AddPassenger.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userM\BookingConfirmation.aspx.cs">
+      <DependentUpon>BookingConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userM\BookingConfirmation.aspx.designer.cs">
+      <DependentUpon>BookingConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userM\CancelBooking.aspx.cs">
+      <DependentUpon>CancelBooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userM\CancelBooking.aspx.designer.cs">
+      <DependentUpon>CancelBooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userM\MaintainPassenger.aspx.cs">
+      <DependentUpon>MaintainPassenger.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userM\MaintainPassenger.aspx.designer.cs">
+      <DependentUpon>MaintainPassenger.aspx</DependentUpon>
+    </Compile>
     <Compile Include="userM\NestedMasterUser.master.cs">
       <DependentUpon>NestedMasterUser.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -424,26 +569,40 @@
     <Compile Include="userM\NestedMasterUser.master.designer.cs">
       <DependentUpon>NestedMasterUser.master</DependentUpon>
     </Compile>
-    <Compile Include="userM\UserM.Master.cs">
-      <DependentUpon>UserM.Master</DependentUpon>
+    <Compile Include="userM\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="userM\UserM.Master.designer.cs">
-      <DependentUpon>UserM.Master</DependentUpon>
+    <Compile Include="userM\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
     </Compile>
-    <Compile Include="userM\viewHistory.aspx.cs">
-      <DependentUpon>viewHistory.aspx</DependentUpon>
+    <Compile Include="userM\SelectPassenger.aspx.cs">
+      <DependentUpon>SelectPassenger.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="userM\viewHistory.aspx.designer.cs">
-      <DependentUpon>viewHistory.aspx</DependentUpon>
+    <Compile Include="userM\SelectPassenger.aspx.designer.cs">
+      <DependentUpon>SelectPassenger.aspx</DependentUpon>
     </Compile>
-    <Compile Include="userM\welcome.aspx.cs">
-      <DependentUpon>welcome.aspx</DependentUpon>
+    <Compile Include="userM\UpdatePassenger.aspx.cs">
+      <DependentUpon>UpdatePassenger.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="userM\welcome.aspx.designer.cs">
-      <DependentUpon>welcome.aspx</DependentUpon>
+    <Compile Include="userM\UpdatePassenger.aspx.designer.cs">
+      <DependentUpon>UpdatePassenger.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userM\ViewHistory.aspx.cs">
+      <DependentUpon>ViewHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userM\ViewHistory.aspx.designer.cs">
+      <DependentUpon>ViewHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userM\Welcome.aspx.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userM\Welcome.aspx.designer.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
@@ -451,6 +610,20 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="view\BookingFlightForm.aspx.cs">
+      <DependentUpon>BookingFlightForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\BookingFlightForm.aspx.designer.cs">
+      <DependentUpon>BookingFlightForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\FlightResult.aspx.cs">
+      <DependentUpon>FlightResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\FlightResult.aspx.designer.cs">
+      <DependentUpon>FlightResult.aspx</DependentUpon>
     </Compile>
     <Compile Include="view\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -472,6 +645,13 @@
     </Compile>
     <Compile Include="view\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="view\SearchFlight.aspx.cs">
+      <DependentUpon>SearchFlight.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="view\SearchFlight.aspx.designer.cs">
+      <DependentUpon>SearchFlight.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -498,7 +678,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>1671</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:1671/airline</IISUrl>
+          <IISUrl>http://localhost:1671/airlion</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

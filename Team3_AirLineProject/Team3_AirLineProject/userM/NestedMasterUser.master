@@ -16,7 +16,7 @@
             </asp:TreeView>
             <asp:XmlDataSource ID="userXml" runat="server" DataFile="~/userM/nav.xml"></asp:XmlDataSource>
         </div>
-        <div style="float:left">
+        <div style="float:left; width:800px; margin:5px;" >
             <asp:ContentPlaceHolder runat="server" ID="Main">
             </asp:ContentPlaceHolder>
         </div>

@@ -8,7 +8,7 @@ using Controller;
 
 namespace Team3_AirLineProject.staff
 {
-    public partial class viewHistory : System.Web.UI.Page
+    public partial class ViewHistory : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

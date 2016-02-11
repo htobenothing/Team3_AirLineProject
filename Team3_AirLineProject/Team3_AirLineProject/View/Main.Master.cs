@@ -20,24 +20,15 @@ namespace Team3_AirLineProject.View
                     if (Session["LoginUser"] != null)
                     {
                         btnLogout.Visible = true;
-                        btnLogin.Visible = false;
-                        btnLRegister.Visible = false;
+                        
                         User u = (User)Session["LoginUser"];
+                        btnLogout.Text = u.idUser;
                     }
                 }
             }
            
         }
 
-        protected void btnLRegister_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("~/view/Register.aspx");
-        }
-
-        protected void btnLogin_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("~/view/Login.aspx");
-        }
 
         protected void btnLogout_Click(object sender, EventArgs e)
         {
