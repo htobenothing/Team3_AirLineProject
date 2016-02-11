@@ -23,7 +23,7 @@ namespace Team3_AirLineProject.staff
             string endTime = "";
             string endCity = "";
             decimal totalPrice = (decimal)Session["totalPrice"];
-            if (!IsPostBack)
+            if (!IsPostBack && Session["LoginUser"] != null)
             {
                 using (SqlConnection con = new SqlConnection(cs))
                 {

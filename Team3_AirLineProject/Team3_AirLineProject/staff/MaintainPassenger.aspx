@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/staff/NestedMasterStaff.master" AutoEventWireup="true" CodeBehind="MaintainPassenger.aspx.cs" Inherits="Team3_AirLineProject.staff.MaintainPassenger" %>
+﻿<%@ Page Title="" Theme="table" Language="C#" MasterPageFile="~/staff/NestedMasterStaff.master" AutoEventWireup="true" CodeBehind="MaintainPassenger.aspx.cs" Inherits="Team3_AirLineProject.staff.MaintainPassenger" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Main" runat="server">
-     <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None">
+     <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" SkinID="resultTable">
          <Columns>
                 <asp:TemplateField HeaderText="ck">
                     <ItemTemplate>

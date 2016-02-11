@@ -16,13 +16,13 @@ namespace Team3_AirLineProject.staff
         }
         protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
         {
-            Boolean b = Calendar1.Visible;
-            Calendar1.Visible = !b;
+
+            Calendar1.Visible = !Calendar1.Visible;
         }
 
         protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
         {
-            Calendar2.Visible = true;
+            Calendar2.Visible = !Calendar2.Visible;
         }
 
         protected void Calendar1_SelectionChanged(object sender, EventArgs e)

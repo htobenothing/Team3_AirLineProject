@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Home>
+<Home text="Home" url="~/view/SearchFlight.aspx">
   <funtion text="Welcome" url="~/userM/Welcome.aspx"></funtion>
   <funtion text="Profile" url="~/userM/Profile.aspx"></funtion>
   <funtion text="MainTain Passenger" url="~/userM/MaintainPassenger.aspx"></funtion>

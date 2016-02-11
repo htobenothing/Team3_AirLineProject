@@ -12,7 +12,7 @@ namespace Team3_AirLineProject.staff
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            if (!IsPostBack && Session["LoginUser"] != null)
             {
                 Label9.Text = (string)Session["value1"];
                 string s = Label9.Text;

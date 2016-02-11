@@ -8,12 +8,12 @@ using Controller;
 
 namespace Team3_AirLineProject.staff
 {
-    public partial class AddPassenger : System.Web.UI.Page
+    public partial class bAddPassenger : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-        }
 
+        }
         protected void Button1_Click(object sender, EventArgs e)
         {
             User ur = (User)Session["LoginUser"];
@@ -40,12 +40,12 @@ namespace Team3_AirLineProject.staff
             ctx.Passengers.Add(p);
             ctx.SaveChanges();
 
-            Response.Redirect("MaintainPassenger.aspx");
+            Response.Redirect("SelectPassenger.aspx");
         }
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            Response.Redirect("MaintainPassenger.aspx");
+            Response.Redirect("SelectPassenger.aspx");
         }
     }
 }

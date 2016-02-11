@@ -28,7 +28,7 @@ namespace Team3_AirLineProject.staff
             List<string> passportNoList = new List<string>();
             List<string> pasngraNameList = new List<string>();
 
-            if (!IsPostBack)
+            if (!IsPostBack && Session["LoginUser"] != null)
             {
                 using (SqlConnection con = new SqlConnection(cs))
                 {

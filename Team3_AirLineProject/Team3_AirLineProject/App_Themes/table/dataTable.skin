@@ -14,7 +14,7 @@ Default skin template. The following skins are provided as examples only.
 <asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
 --%>
 
- <asp:GridView  runat="server" CellPadding="4" ForeColor="#333333" AllowPaging="True" EnableSortingAndPagingCallbacks="True" Width="100%" skinID="resultTable" >
+ <asp:GridView  runat="server" CellPadding="4" ForeColor="#333333" AllowPaging="True" EnableSortingAndPagingCallbacks="True" Width="900px" skinID="resultTable" >
             <AlternatingRowStyle BackColor="White" />
             <EditRowStyle BackColor="#2461BF" />
             <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" HorizontalAlign="Center" VerticalAlign="Middle" />

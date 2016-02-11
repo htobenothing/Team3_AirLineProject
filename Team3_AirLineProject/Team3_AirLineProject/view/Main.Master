@@ -26,7 +26,7 @@
             <nav>
                 <ul id="menu">
                     <li id="menu_active"><a href="/airlion/view/SearchFlight.aspx"><span><span>Home</span></span></a></li>
-
+                    
                 </ul>
             </nav>
         </header>
@@ -36,7 +36,7 @@
                 <div align="right">
                     <a href="Register.aspx" class="button1" id="register">Register</a>
                     <a href="Login.aspx" class="button1" id="Login">Login</a>
-
+                   
                     <asp:Button runat="server" ID="btnLogout" CssClass="button1" OnClick="btnLogout_Click" />
                 </div>
                 <div>
@@ -60,6 +60,7 @@
                 if (q.length >5) {
                     $("#register").hide();
                     $("#Login").hide();
+                    
                 }
             })
             

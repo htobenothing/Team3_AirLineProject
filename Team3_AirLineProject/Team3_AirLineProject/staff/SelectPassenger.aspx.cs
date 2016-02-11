@@ -21,7 +21,7 @@ namespace Team3_AirLineProject.staff
         {
             // List<>
             SqlDataReader sqlReader;
-            if (!IsPostBack)
+            if (!IsPostBack && Session["LoginUser"] != null)
             {
                 User ur = (User)Session["LoginUser"];
                 string userId = ur.idUser;
@@ -119,7 +119,7 @@ namespace Team3_AirLineProject.staff
                         {
                             Console.Write(sqlError);
                         }
-                        Response.Redirect("BookingConfirm.aspx");
+                        Response.Redirect("BookingConfirmation.aspx");
                     }
                 }
             }
@@ -134,7 +134,7 @@ namespace Team3_AirLineProject.staff
         protected void AddPsnBtn_Click(object sender, EventArgs e)
         {
             // Response.Redirect(String.Format("AddPassengerForm.aspx?userId={0}&departureId={1}", userId, departureId));
-            Response.Redirect("AddPassengerForm.aspx");
+            Response.Redirect("bAddPassenger.aspx");
         }
     }
 }

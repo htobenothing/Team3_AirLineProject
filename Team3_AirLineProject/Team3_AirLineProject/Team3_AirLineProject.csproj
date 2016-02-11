@@ -258,6 +258,7 @@
     <Content Include="Site.Master" />
     <Content Include="staff\AddFlight.aspx" />
     <Content Include="staff\AddPassenger.aspx" />
+    <Content Include="staff\bAddPassenger.aspx" />
     <Content Include="staff\BookingConfirmation.aspx" />
     <Content Include="staff\CancelBooking.aspx" />
     <Content Include="staff\CancelConfirm.aspx" />
@@ -271,6 +272,7 @@
     <Content Include="staff\ViewHistory.aspx" />
     <Content Include="staff\Welcome.aspx" />
     <Content Include="userM\AddPassenger.aspx" />
+    <Content Include="userM\bAddPassenger.aspx" />
     <Content Include="userM\BookingConfirmation.aspx" />
     <Content Include="userM\CancelBooking.aspx" />
     <Content Include="userM\MaintainPassenger.aspx" />
@@ -296,7 +298,6 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Site.Mobile.Master" />
     <Content Include="view\Main.Master" />
-    <Content Include="view\Web.config" />
     <Content Include="userM\NestedMasterUser.master" />
     <Content Include="staff\NestedMasterStaff.master" />
     <None Include="Web.Debug.config">
@@ -449,6 +450,13 @@
     <Compile Include="staff\AddPassenger.aspx.designer.cs">
       <DependentUpon>AddPassenger.aspx</DependentUpon>
     </Compile>
+    <Compile Include="staff\bAddPassenger.aspx.cs">
+      <DependentUpon>bAddPassenger.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="staff\bAddPassenger.aspx.designer.cs">
+      <DependentUpon>bAddPassenger.aspx</DependentUpon>
+    </Compile>
     <Compile Include="staff\BookingConfirmation.aspx.cs">
       <DependentUpon>BookingConfirmation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -540,6 +548,13 @@
     </Compile>
     <Compile Include="userM\AddPassenger.aspx.designer.cs">
       <DependentUpon>AddPassenger.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userM\bAddPassenger.aspx.cs">
+      <DependentUpon>bAddPassenger.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userM\bAddPassenger.aspx.designer.cs">
+      <DependentUpon>bAddPassenger.aspx</DependentUpon>
     </Compile>
     <Compile Include="userM\BookingConfirmation.aspx.cs">
       <DependentUpon>BookingConfirmation.aspx</DependentUpon>

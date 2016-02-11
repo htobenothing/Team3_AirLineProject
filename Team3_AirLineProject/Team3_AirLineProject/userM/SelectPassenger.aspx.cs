@@ -133,7 +133,7 @@ namespace Team3_AirLineProject.userM
         protected void AddPsnBtn_Click(object sender, EventArgs e)
         {
             // Response.Redirect(String.Format("AddPassengerForm.aspx?userId={0}&departureId={1}", userId, departureId));
-            Response.Redirect("AddPassengerForm.aspx");
+            Response.Redirect("bAddPassenger.aspx");
         }
     }
 }

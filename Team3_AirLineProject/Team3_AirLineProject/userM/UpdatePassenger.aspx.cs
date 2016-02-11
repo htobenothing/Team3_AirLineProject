@@ -12,7 +12,7 @@ namespace Team3_AirLineProject.userM
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            if (!IsPostBack && Session["LoginUser"] !=null)
             {
                 TextBox1.Text = (string)Session["value1"];
                 AirlionEntities ctx = new AirlionEntities();

@@ -1,9 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/view/Main.Master" AutoEventWireup="true" CodeBehind="MaintainUser.aspx.cs" Inherits="Team3_AirLineProject.admin.MaintainUser" %>
+﻿<%@ Page Title="" Theme="table" Language="C#" MasterPageFile="~/view/Main.Master" AutoEventWireup="true" CodeBehind="MaintainUser.aspx.cs" Inherits="Team3_AirLineProject.admin.MaintainUser" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <br />
-    <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None">
+    <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" SkinID="resultTable">
                     <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                     <Columns>
                 <asp:TemplateField HeaderText="ck">

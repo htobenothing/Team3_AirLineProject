@@ -12,7 +12,7 @@ namespace Team3_AirLineProject.staff
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            if (!IsPostBack && Session["LoginUser"] !=null)
             {
                 AirlionEntities ctx = new AirlionEntities();
                 var q = from x in ctx.Flights select x;
