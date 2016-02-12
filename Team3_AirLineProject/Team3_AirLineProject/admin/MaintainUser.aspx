@@ -1,9 +1,10 @@
-﻿<%@ Page Title="" Theme="table" Language="C#" MasterPageFile="~/view/Main.Master" AutoEventWireup="true" CodeBehind="MaintainUser.aspx.cs" Inherits="Team3_AirLineProject.admin.MaintainUser" %>
+﻿<%@ Page Title="" Theme="table"  Language="C#" MasterPageFile="~/view/Main.Master" AutoEventWireup="true" CodeBehind="MaintainUser.aspx.cs" Inherits="Team3_AirLineProject.admin.MaintainUser" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server"  >
     <br />
-    <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" SkinID="resultTable">
+    <div class="contenthold">
+    <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None"  SkinID="maintainTable">
                     <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                     <Columns>
                 <asp:TemplateField HeaderText="ck">
@@ -24,10 +25,11 @@
                     <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
     </asp:GridView>
     <br />
-    <asp:Button ID="Button1" runat="server" Text="update" OnClick="Button1_Click" />
+    <asp:Button ID="Button1" runat="server" Text="Update" OnClick="Button1_Click" CssClass="button1" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Button ID="Button2" runat="server" Text="Add a new user" OnClick="Button2_Click" />
+    <asp:Button ID="Button2" runat="server" Text="Add New" OnClick="Button2_Click" CssClass="button1" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Button ID="Button3" runat="server" Text="delete" OnClick="Button3_Click" />
+    <asp:Button ID="Button3" runat="server" Text="Delete" OnClick="Button3_Click" CssClass="button1" />
 
+</div>
 </asp:Content>

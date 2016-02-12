@@ -19,25 +19,29 @@ namespace Team3_AirLineProject.view
         {
 
 
-            if (!IsPostBack)
+            if (!IsPostBack )
             {
-                // string departuredate = Request.QueryString["DepartureDate"];
-                string startDate = (string)Session["startDate"];
-                DateTime myDate = DateTime.Parse(startDate);
-                string format = "yyyy-MM-dd";
-                Response.Write(myDate.ToString(format));
-                using (SqlConnection con = new SqlConnection(cs))
+                if (Session["startDate"] != null)
                 {
-                    con.Open();
-                    SqlCommand cmd = new SqlCommand("select distinct f.idFlight as [Flight No.], f.StartTime as [Departure Time], f.endTime as [Arrival Time],  f.price as [Price] from Flight f,Departure d where " +
-                          " startCity='" + Request.QueryString["From"] + "' and endCity='" + Request.QueryString["To"] + "' and startDate='" + myDate.ToString(format) + "'");
-                    cmd.Connection = con;
-                    DataTable dt = new DataTable();
-                    dt.Load(cmd.ExecuteReader());
-                    flightgridView.DataSource = dt;
-                    flightgridView.DataBind();
+                    // string departuredate = Request.QueryString["DepartureDate"];
+                    string startDate = (string)Session["startDate"];
+                    DateTime myDate = DateTime.Parse(startDate);
+                    string format = "yyyy-MM-dd";
+                    Response.Write(myDate.ToString(format));
+                    using (SqlConnection con = new SqlConnection(cs))
+                    {
+                        con.Open();
+                        SqlCommand cmd = new SqlCommand("select distinct f.idFlight as [Flight No.], f.StartTime as [Departure Time], f.endTime as [Arrival Time],  f.price as [Price] from Flight f,Departure d where " +
+                              " startCity='" + Request.QueryString["From"] + "' and endCity='" + Request.QueryString["To"] + "' and startDate='" + myDate.ToString(format) + "'");
+                        cmd.Connection = con;
+                        DataTable dt = new DataTable();
+                        dt.Load(cmd.ExecuteReader());
+                        flightgridView.DataSource = dt;
+                        flightgridView.DataBind();
 
+                    }
                 }
+                
             }
 
         }

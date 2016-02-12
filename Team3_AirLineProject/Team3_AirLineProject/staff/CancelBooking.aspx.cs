@@ -26,34 +26,52 @@ namespace Team3_AirLineProject.staff
             int bookingId = Convert.ToInt32(bookinIdTxt.Text);
             int pasCount = 0;
             Session["idBooking"] = bookinIdTxt.Text;
-            using (SqlConnection con = new SqlConnection(cs))
+            AirlionEntities cnx = new AirlionEntities();
+            Booking b = cnx.Bookings.Find(Convert.ToInt32 (bookinIdTxt.Text));
+            if (b != null)
             {
-                con.Open();
-                SqlCommand cmd1 = new SqlCommand("select count(*) from Ticktes where idBooking=" + bookingId + ";", con);
-                sqlReader = cmd1.ExecuteReader();
-                while (sqlReader.Read())
+                if (b.bookingStatus != "cancelled")
                 {
-                    pasCount = Convert.ToInt32(sqlReader.GetValue(0));
+                    using (SqlConnection con = new SqlConnection(cs))
+                    {
+                        con.Open();
+                        SqlCommand cmd1 = new SqlCommand("select count(*) from Ticktes where idBooking=" + bookingId + ";", con);
+                        sqlReader = cmd1.ExecuteReader();
+                        while (sqlReader.Read())
+                        {
+                            pasCount = Convert.ToInt32(sqlReader.GetValue(0));
+                        }
+                        sqlReader.Close();
+                        try
+                        {
+                            SqlCommand cmd2 = new SqlCommand("update Booking set bookingStatus='cancelled' where idBooking=" + bookingId + ";", con);
+                            cmd2.Connection = con;
+                            int x = cmd2.ExecuteNonQuery();
+                            SqlCommand cmd3 = new SqlCommand("update Departure set vacancy=vacancy+" + pasCount + " where idDeparture in(select idDeparture from Booking where idBooking=" + bookingId + " );", con);
+                            cmd3.Connection = con;
+                            int y = cmd3.ExecuteNonQuery();
+
+                        }
+                        catch (SqlException sqlError)
+                        {
+                            Console.Write(sqlError);
+
+                        }
+                        Response.Redirect("CancelConfirm.aspx");
+
+                    }
                 }
-                sqlReader.Close();
-                try
+                else
                 {
-                    SqlCommand cmd2 = new SqlCommand("update Booking set bookingStatus='cancelled' where idBooking=" + bookingId + ";", con);
-                    cmd2.Connection = con;
-                    int x = cmd2.ExecuteNonQuery();
-                    SqlCommand cmd3 = new SqlCommand("update Departure set vacancy=vacancy+" + pasCount + " where idDeparture in(select idDeparture from Booking where idBooking=" + bookingId + " );", con);
-                    cmd3.Connection = con;
-                    int y = cmd3.ExecuteNonQuery();
-
+                    Label2.Text = "The Booking already Cancel";
                 }
-                catch (SqlException sqlError)
-                {
-                    Console.Write(sqlError);
-
-                }
-                Response.Redirect("CancellationConfirmForm.aspx");
-
             }
+            else
+            {
+                Label2.Text = "The Booking not exist";
+            }
+            
+           
         }
     }
 }

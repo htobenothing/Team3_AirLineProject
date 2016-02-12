@@ -1,11 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/userM/NestedMasterUser.master" AutoEventWireup="true" CodeBehind="SelectPassenger.aspx.cs" Inherits="Team3_AirLineProject.userM.SelectPassenger" %>
+﻿<%@ Page Title="" Theme="table" Language="C#" MasterPageFile="~/userM/NestedMasterUser.master" AutoEventWireup="true" CodeBehind="SelectPassenger.aspx.cs" Inherits="Team3_AirLineProject.userM.SelectPassenger" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Main" runat="server">
 
     <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
 
-    <asp:GridView ID="SelectPessengerView" runat="server" MultiSelect="true" Width="462px">
+    <asp:GridView ID="SelectPessengerView" runat="server" MultiSelect="true" Width="462px" SkinID="maintainTable" >
         <Columns>
-            <asp:TemplateField HeaderText="Select" ItemStyle-HorizontalAlign="Center" ItemStyle-VerticalAlign="Middle" ControlStyle-BorderStyle="Solid" ControlStyle-BorderColor="Black">
+            <asp:TemplateField HeaderText="Select" ItemStyle-HorizontalAlign="Center" ItemStyle-VerticalAlign="Middle" >
                 <ItemTemplate>
                     <asp:CheckBox ID="selectPasngrChkBox" runat="server" />
                 </ItemTemplate>

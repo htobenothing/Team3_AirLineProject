@@ -36,18 +36,24 @@ namespace Team3_AirLineProject.staff
             {
                 f.status = "inactive";
             }
-            ctx.Flights.Add(f);
-            ctx.SaveChanges();
+            
+            // check whether the flightid exist 
+            if (ctx.Flights.Find(f.idFlight) == null)
+            {
+                ctx.Flights.Add(f);
+                ctx.SaveChanges();
+                Response.Redirect("MaintainFlight.aspx");
+            }
+            else
+            {
+                Label9.Text = "This ID has been used";
+            }
 
             
-            Response.Redirect("MaintainFlight.aspx");
 
 
         }
 
-        protected void Button2_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("MaintainFlight.aspx");
-        }
+      
     }
 }

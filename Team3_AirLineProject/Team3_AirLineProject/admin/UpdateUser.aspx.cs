@@ -39,9 +39,6 @@ namespace Team3_AirLineProject.admin
             Response.Redirect("MaintainUser.aspx");
         }
 
-        protected void Button2_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("MaintainUser.aspx");
-        }
+      
     }
 }

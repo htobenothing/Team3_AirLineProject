@@ -62,9 +62,6 @@ namespace Team3_AirLineProject.staff
             Response.Redirect("MaintainFlight.aspx");
         }
 
-        protected void Button2_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("MaintainFlight.aspx");
-        }
+        
     }
 }

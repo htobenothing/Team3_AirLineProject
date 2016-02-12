@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Main" runat="server">
 
-    <div style="width:100%">
+    <div style="width:100%" class="contenthold">
         <table class="auto-style1">
             <tr>
                 <td class="auto-style2">
@@ -50,7 +50,7 @@
         <asp:Label ID="Label3" runat="server" Text="status"></asp:Label>
         <br />
         <br />
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Search" />
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Search" CssClass="button1" />
 
         <br />
 

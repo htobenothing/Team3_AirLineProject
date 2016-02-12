@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/staff/NestedMasterStaff.master" AutoEventWireup="true" CodeBehind="CancelConfirm.aspx.cs" Inherits="Team3_AirLineProject.staff.CancelConfirm" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Main" runat="server">
+    <div class="contenthold">
 
+    
     <br />
     <asp:Label ID="Label1" runat="server" Text="Booking has been cancelled!!!!" Font-Bold="True" Font-Size="XX-Large" ForeColor="Red" Font-Underline="True"></asp:Label>
     <br /><br /><br />
@@ -146,4 +148,5 @@
             <td>&nbsp;</td>
         </tr>
     </table>
+        </div>
 </asp:Content>

@@ -43,9 +43,6 @@ namespace Team3_AirLineProject.userM
             Response.Redirect("SelectPassenger.aspx");
         }
 
-        protected void Button2_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("SelectPassenger.aspx");
-        }
+        
     }
 }

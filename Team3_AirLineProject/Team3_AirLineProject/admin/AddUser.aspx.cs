@@ -19,33 +19,25 @@ namespace Team3_AirLineProject.admin
         {
             AirlionEntities ctx = new AirlionEntities();
             User u = new User();
+            Label6.Text = "";
             u.idUser = TextBox1.Text;
             u.password = TextBox2.Text;
             u.phoneNo = TextBox3.Text;
-            if (RadioButton1.Checked)
-            { u.status = RadioButton1.Text; }
-            if (RadioButton2.Checked)
-            { u.status = RadioButton2.Text; }
-            if (RadioButton3.Checked)
+            u.status = rdblStatus.SelectedValue;
+            u.idRole = rdblRole.SelectedValue;
+            if (ctx.Users.Find(u.idUser) == null)
             {
-                u.idRole = RadioButton3.Text;
+                ctx.Users.Add(u);
+                ctx.SaveChanges();
+                Response.Redirect("MaintainUser.aspx");
             }
-            if (RadioButton4.Checked)
+            else
             {
-                u.idRole = RadioButton4.Text;
+                Label6.Text = "The User already exist";
             }
-            if (RadioButton5.Checked)
-            {
-                u.idRole = RadioButton5.Text;
-            }
-            ctx.Users.Add(u);
-            ctx.SaveChanges();
-            Response.Redirect("MaintainUser.aspx");
+            
         }
 
-        protected void Button2_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("MaintainUser.aspx");
-        }
+       
     }
 }

@@ -15,7 +15,7 @@ namespace Controller
             User loginUser = UserManager.getUser(name);
             if (null != loginUser)
             {
-                if(loginUser.status == "active")
+                if(loginUser.status.ToLower() == "active")
                 {
                     if (loginUser.password.Equals(password))
                     {

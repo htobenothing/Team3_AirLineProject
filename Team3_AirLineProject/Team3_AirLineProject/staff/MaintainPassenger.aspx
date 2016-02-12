@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Theme="table" Language="C#" MasterPageFile="~/staff/NestedMasterStaff.master" AutoEventWireup="true" CodeBehind="MaintainPassenger.aspx.cs" Inherits="Team3_AirLineProject.staff.MaintainPassenger" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Main" runat="server">
-     <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" SkinID="resultTable">
+    <div class="contenthold">
+     <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" SkinID="maintainTable" >
          <Columns>
                 <asp:TemplateField HeaderText="ck">
                     <ItemTemplate>
@@ -23,9 +24,9 @@
     </asp:GridView>
     <br />
     <br />
-    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="update" />
+   <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Update" CssClass="button1" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="create a new passenger" />
+    <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Create  New" CssClass="button1" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-
+        </div>
 </asp:Content>

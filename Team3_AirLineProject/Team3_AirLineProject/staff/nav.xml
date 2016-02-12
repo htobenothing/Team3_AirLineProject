@@ -3,6 +3,7 @@
   <funtion text="Welcome" url="~/staff/Welcome.aspx"></funtion>
   <funtion text="Profile" url="~/staff/Profile.aspx"></funtion>
   <funtion text="Maintain" url="#">
+    <subfunction text="Maintain Passenger" url="~/staff/MaintainPassenger.aspx"></subfunction>
     <subfunction text="Maintain Flight" url="~/staff/MaintainFlight.aspx"></subfunction>
   </funtion>
   <function text="View History" url="~/staff/ViewHistory.aspx"></function>

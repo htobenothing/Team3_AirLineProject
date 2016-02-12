@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/userM/NestedMasterUser.master" AutoEventWireup="true" CodeBehind="ViewHistory.aspx.cs" Inherits="Team3_AirLineProject.userM.ViewHistory" %>
+﻿<%@ Page Title="" Language="C#" Theme="table" MasterPageFile="~/userM/NestedMasterUser.master" AutoEventWireup="true" CodeBehind="ViewHistory.aspx.cs" Inherits="Team3_AirLineProject.userM.ViewHistory" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Main" runat="server">
     <div style="width:100%">
@@ -29,14 +29,14 @@
             </tr>
             <tr>
                 <td>
-                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Search" />
+                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Search" CssClass="button1" />
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
         </table>
         <br />
-        <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None">
+        <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" SkinID="resultTable">
             <AlternatingRowStyle BackColor="White" />
             <EditRowStyle BackColor="#2461BF" />
             <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />

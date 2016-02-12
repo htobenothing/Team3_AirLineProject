@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Main" runat="server">
 
-    
+    <div  class="contenthold">
     <table style="width: 100%;">
         <asp:Label ID="Label1" runat="server" Text="Itinerary Information" Font-Bold="True" Font-Size="XX-Large" ForeColor="#009933" Font-Underline="True"></asp:Label>
 
@@ -130,5 +130,5 @@
         </tr>
     </table>
     <br />
-
+</div>
 </asp:Content>

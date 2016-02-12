@@ -21,7 +21,7 @@ namespace Team3_AirLineProject.userM
         {
             // List<>
             SqlDataReader sqlReader;
-            if (!IsPostBack)
+            if (!IsPostBack && Session["LoginUser"]!=null)
             {
                 User ur =(User)Session["LoginUser"];
                 string userId = ur.idUser;

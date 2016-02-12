@@ -75,7 +75,7 @@ namespace Team3_AirLineProject.admin
                     u = ctx.Users.Where(x => x.idUser == s).First();
                     u.status = "inactive";
                     ctx.SaveChanges();
-                    Response.Redirect("CRUDuser");
+                    Response.Redirect("MaintainUser.aspx");
 
                 }
 

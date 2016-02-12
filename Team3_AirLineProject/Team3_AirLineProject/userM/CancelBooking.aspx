@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/userM/NestedMasterUser.master" AutoEventWireup="true" CodeBehind="CancelBooking.aspx.cs" Inherits="Team3_AirLineProject.userM.CancellBooking" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Main" runat="server">
+    <div class="contenthold">
     <table style="width:100%;">
         <tr>
             <td class="auto-style1">&nbsp;</td>
@@ -20,9 +21,9 @@
         
     </table>
     <br /><br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="Button1" runat="server" Text="Cancel Booking" BorderStyle="Solid" Font-Bold="True" OnClick="Button1_Click" style="margin-left: 160px" Width="167px" />
+    <asp:Button ID="Button1" runat="server" Text="Cancel Booking" BorderStyle="Solid" Font-Bold="True" Cssclass="button1" OnClick="Button1_Click" />
     <br />
     <br />
     <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
-
+</div>
 </asp:Content>

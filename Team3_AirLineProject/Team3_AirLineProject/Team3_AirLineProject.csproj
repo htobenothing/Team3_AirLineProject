@@ -289,7 +289,6 @@
     <Content Include="userM\ViewHistory.aspx" />
     <Content Include="userM\Welcome.aspx" />
     <Content Include="ViewSwitcher.ascx" />
-    <Content Include="view\BookingFlightForm.aspx" />
     <Content Include="view\FlightResult.aspx" />
     <Content Include="view\Login.aspx" />
     <Content Include="view\Register.aspx" />
@@ -629,13 +628,6 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="view\BookingFlightForm.aspx.cs">
-      <DependentUpon>BookingFlightForm.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="view\BookingFlightForm.aspx.designer.cs">
-      <DependentUpon>BookingFlightForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="view\FlightResult.aspx.cs">
       <DependentUpon>FlightResult.aspx</DependentUpon>

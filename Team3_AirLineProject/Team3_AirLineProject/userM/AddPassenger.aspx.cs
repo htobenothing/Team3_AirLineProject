@@ -36,15 +36,19 @@ namespace Team3_AirLineProject.userM
             {
                 p.gender = "female";
             }
-
-            ctx.Passengers.Add(p);
-            ctx.SaveChanges();
-            Response.Redirect("MaintainPassenger.aspx");
+            if (ctx.Passengers.Find(ur.idUser, p.passportNo) == null)
+            {
+                ctx.Passengers.Add(p);
+                ctx.SaveChanges();
+                Response.Redirect("MaintainPassenger.aspx");
+            }
+            else
+            {
+                Label5.Text = "The User already exist.";
+            }
+            
         }
 
-        protected void Button2_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("MaintainPassenger.aspx");
-        }
+       
     }
 }

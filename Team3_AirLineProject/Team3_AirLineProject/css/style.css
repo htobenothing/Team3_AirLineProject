@@ -28,7 +28,7 @@ body {
 	min-height:800px;
 	color:#3a3a3a;
 	line-height:20px;
-	min-width:1366px;
+	min-width:1280px;
 	padding:10px 0
 }
 .ic, .ic a {
@@ -290,6 +290,7 @@ header {
 	padding:0
 }
 .button1 {
+    border:none;
 	display:inline-block;
 	font-size:13px;
 	color:#fff;
@@ -306,18 +307,18 @@ header {
     top: 0px;
     left: 0px;
 }
-.button1 strong {
+/*.button1 strong {
 	display:block;
 	padding-right:16px;
 	background:url(../images/marker_2.gif) right 10px no-repeat
-}
-.button1:hover {
+}*/
+/*.button1:hover {
 	background:url(../images/button_active.gif) 0 0 repeat-x #e7e6e6
 }
 .button1:hover strong {
 	background:url(../images/marker_1.gif) right 10px no-repeat;
 	color:#1d77e9
-}
+}*/
 .link1 {
 	padding-left:13px;
 	background:url(../images/marker_1.gif) 0 6px no-repeat;

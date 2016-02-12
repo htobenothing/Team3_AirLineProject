@@ -1,6 +1,8 @@
 ﻿<%@ Page Title=""  Language="C#" Theme="table" MasterPageFile="~/staff/NestedMasterStaff.master" AutoEventWireup="true" CodeBehind="MaintainFlight.aspx.cs" Inherits="Team3_AirLineProject.staff.MaintainFlight" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Main" runat="server">
-    <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" SkinID="resultTable">
+    <div  class="contenthold">
+
+    <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None"  SkinID="maintainTable">
         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
         <Columns>
                 <asp:TemplateField HeaderText="ck">
@@ -22,12 +24,12 @@
     </asp:GridView>
 <br />
 <br />
-<asp:Button ID="Button1" runat="server" Text="update" OnClick="Button1_Click" />
+<asp:Button ID="Button1" runat="server" Text="Update" OnClick="Button1_Click" CssClass="button1" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<asp:Button ID="Button2" runat="server" Text="add a new flight" OnClick="Button2_Click" />
+<asp:Button ID="Button2" runat="server" Text="Add  New" OnClick="Button2_Click" CssClass="button1" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<asp:Button ID="Button3" runat="server" Text="delete" OnClick="Button3_Click" />
+<asp:Button ID="Button3" runat="server" Text="Delete" OnClick="Button3_Click" CssClass="button1" />
 <br />
-
+</div>
 
 </asp:Content>

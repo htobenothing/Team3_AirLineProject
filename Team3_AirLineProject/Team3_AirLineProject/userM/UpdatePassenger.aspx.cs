@@ -49,9 +49,6 @@ namespace Team3_AirLineProject.userM
             Response.Redirect("MaintainPassenger");
         }
 
-        protected void Button2_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("MaintainPassenger");
-        }
+       
     }
 }
